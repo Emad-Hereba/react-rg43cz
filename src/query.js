@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Query = () => {
-  let cosa="";
+  
   let text = '';
   const [names, setNames] = useState([
     'Emad Hereba',
@@ -13,8 +13,7 @@ const Query = () => {
   // for (let i = 0; i < names.length; i++) text += names[i] + '<br/>';
   const removeit = () => {
     alert('under Construction');
-    cosa=names.pop()
-    setNames(names.filter(cosa));
+    setNames(names.pop());
     alert(names);
   };
   return (
