@@ -12,7 +12,7 @@ const Query = () => {
   // for (let i = 0; i < names.length; i++) text += names[i] + '<br/>';
   const removeit = () => {
     alert('under Construction');
-    setNames(...names,names.pop());
+    setNames(names.filter(names.pop()));
     alert(names);
   };
   return (
@@ -24,7 +24,7 @@ const Query = () => {
         </React.Fragment>
       ))}
       <br />
-      <button onClick={removeit}>Remove</button>
+      <button onClick={removeit}> Remove </button>
     </div>
   );
 };
