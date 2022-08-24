@@ -20,7 +20,7 @@ const Query = () => {
      
       {names.map((s) => (
         <React.Fragment>
-          {s}
+          {Math.random,s}
           <br />
         </React.Fragment>
       ))}
