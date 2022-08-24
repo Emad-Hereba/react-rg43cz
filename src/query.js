@@ -13,6 +13,7 @@ const Query = () => {
   const removeit = () => {
     alert('under Construction');
     setNames(delete names[names.length]);
+    alert('under Construction');
   };
   return (
     <div>
