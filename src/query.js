@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Query = () => {
-  const cosa=[];
+  let cosa="";
   let text = '';
   const [names, setNames] = useState([
     'Emad Hereba',
