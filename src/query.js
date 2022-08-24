@@ -12,15 +12,15 @@ const Query = () => {
   // for (let i = 0; i < names.length; i++) text += names[i] + '<br/>';
   const removeit = () => {
     alert('under Construction');
-    setNames(delete names[names.length]);
-    alert('under Construction');
+    setNames(names.pop());
+    alert(names);
   };
   return (
     <div>
      
       {names.map((s) => (
         <React.Fragment>
-          {Math.random,s}
+          {s}
           <br />
         </React.Fragment>
       ))}
