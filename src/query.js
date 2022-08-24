@@ -9,7 +9,7 @@ const Query = () => {
     'Ahmed Emad Hereba',
     'Youssif Emad Radwan',
   ];
-  for (let i = 0; i < names.length; i++) text += names[i] + '<br/>';
+  // for (let i = 0; i < names.length; i++) text += names[i] + '<br/>';
   return (
     <div>
       {names.map((s) => (
