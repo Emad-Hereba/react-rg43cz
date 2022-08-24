@@ -16,6 +16,7 @@ const Query = () => {
   };
   return (
     <div>
+     
       {names.map((s) => (
         <React.Fragment>
           {s}
