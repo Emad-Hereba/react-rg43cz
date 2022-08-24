@@ -7,7 +7,7 @@ const Query = () => {
     "Emad Radwan"
   ];
   for (let i = 0; i<names.length; i++){
-    text+= `names[i]+<br>`
+    text+= names[i]+`<br>`
   }
   text=names
   return (
