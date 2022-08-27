@@ -12,8 +12,9 @@ const Query = () => {
   ]);
   // for (let i = 0; i < names.length; i++) text += names[i] + '<br/>';
   const removeit = () => {
-    alert(names.slice(0,names.length-2));
-    setNames(names.slice(0,4));
+    alert(names.slice(0,names.length-1));
+    names.pop();
+    setNames(names.slice(0,names.length));
     alert(names);
   };
   return (
