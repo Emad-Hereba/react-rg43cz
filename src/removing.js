@@ -19,17 +19,17 @@ const Removit = () => {
   
   // for (let i = 0; i < names.length; i++) text += names[i] + '<br/>';
   const removeit = () => {
-    alert(names.slice(0, names.length - 1));
+  //  alert(names.slice(0, names.length - 1));
     names.pop();
     setNames(names.slice(0, names.length));
-    alert(names);
+  //  alert(names);
   };
   
   const addit = () => {
-    alert(names.slice(0,names.length-1));
+//    alert(names.slice(0,names.length-1));
     names.push(counry[Math.floor(Math.random() * 4)]);
     setNames(names.slice(0,names.length));
-    alert(names);
+  //  alert(names);
   };
   return (
     <div>
