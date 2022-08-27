@@ -12,8 +12,7 @@ const Query = () => {
   ]);
   // for (let i = 0; i < names.length; i++) text += names[i] + '<br/>';
   const removeit = () => {
-    alert('under Construction');
-    console.log()
+    console.log(names);
     setNames(names.filter(name=>name!==names.pop()));
     alert(names);
   };
