@@ -12,7 +12,7 @@ const Query = () => {
   ]);
   // for (let i = 0; i < names.length; i++) text += names[i] + '<br/>';
   const removeit = () => {
-    console.log(names.lenght-1);
+    console.log(0,names.lenght-1);
     alert(names.lenght-1);
     setNames(names.slice(names.lenght-1,1));
     alert(names);
