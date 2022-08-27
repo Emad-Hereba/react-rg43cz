@@ -41,8 +41,8 @@ const Removit = () => {
       ))}
       <br />
       <div>
-        <button classname ="space" onClick={removeit}> Remove </button>
-        <button onClick={addit}> Add country </button>
+        <button class="space" onClick={removeit}> Remove </button>
+        <button class="space" onClick={addit}> Add country </button>
       </div>
     </div>
   );
