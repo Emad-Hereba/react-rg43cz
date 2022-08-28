@@ -33,7 +33,7 @@ const Removit = () => {
   //  alert(names);
   };
   const callaxios = ()=>{
-    axios.get(`https://jsonplaceholder.typicode.com/users`)
+    axios.get(`http://192.168.1.104:8080`)
   }
   return (
     <div>
