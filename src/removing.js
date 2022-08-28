@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from "axios";
 
 const Removit = () => {
   let text = '';
@@ -31,6 +32,9 @@ const Removit = () => {
     setNames(names.slice(0,names.length));
   //  alert(names);
   };
+  const callaxios = ()=>{
+    axios.get(`https://jsonplaceholder.typicode.com/users`)
+  }
   return (
     <div>
       {names.map((s) => (
@@ -43,6 +47,8 @@ const Removit = () => {
       <div>
         <button class="space" onClick={removeit}> Remove </button>
         <button class="space" onClick={addit}> Add country </button>
+        <button class="space" onClick={callaxios}> Call Axios </button>
+
       </div>
     </div>
   );
