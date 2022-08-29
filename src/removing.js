@@ -28,7 +28,7 @@ const Removit = () => {
 
   const addit = () => {
     //    alert(names.slice(0,names.length-1));
-    names.push(counry[Math.floor(Math.random() * 4)]);
+    names.push(counry[Math.floor(Math.random() * 5)]);
     setNames(names.slice(0, names.length));
     //  alert(names);
   };
@@ -40,6 +40,8 @@ const Removit = () => {
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
+        'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
+        'Authorization': 'Bearer key',
       },
       withCredentials: true,
       credentials: 'same-origin',
