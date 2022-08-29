@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from "axios";
+import axios from 'axios';
 
 const Removit = () => {
   let text = '';
@@ -10,31 +10,31 @@ const Removit = () => {
     'Ahmed Emad Hereba',
     'Youssif Emad Radwan',
   ]);
-  const counry=[
+  const counry = [
     'Espana Valencia',
     'New York USA',
     'England London',
     'Germany Berline',
     'Sweedem Stcokholm',
   ];
-  
+
   // for (let i = 0; i < names.length; i++) text += names[i] + '<br/>';
   const removeit = () => {
-  //  alert(names.slice(0, names.length - 1));
+    //  alert(names.slice(0, names.length - 1));
     names.pop();
     setNames(names.slice(0, names.length));
-  //  alert(names);
+    //  alert(names);
   };
-  
+
   const addit = () => {
-//    alert(names.slice(0,names.length-1));
+    //    alert(names.slice(0,names.length-1));
     names.push(counry[Math.floor(Math.random() * 4)]);
-    setNames(names.slice(0,names.length));
-  //  alert(names);
+    setNames(names.slice(0, names.length));
+    //  alert(names);
   };
-  const callaxios = ()=>{
-    axios.get(`https://192.168.1.104:8080/db.json`)
-  }
+  const callaxios = () => {
+    axios.get(`https://192.168.1.104:8080/db.json/1`);
+  };
   return (
     <div>
       {names.map((s) => (
@@ -45,10 +45,18 @@ const Removit = () => {
       ))}
       <br />
       <div>
-        <button class="space" onClick={removeit}> Remove </button>
-        <button class="space" onClick={addit}> Add country </button>
-        <button class="space" onClick={callaxios}> Call Axios </button>
-
+        <button class="space" onClick={removeit}>
+          {' '}
+          Remove{' '}
+        </button>
+        <button class="space" onClick={addit}>
+          {' '}
+          Add country{' '}
+        </button>
+        <button class="space" onClick={callaxios}>
+          {' '}
+          Call Axios{' '}
+        </button>
       </div>
     </div>
   );
