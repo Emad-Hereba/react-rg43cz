@@ -33,7 +33,7 @@ const Removit = () => {
   //  alert(names);
   };
   const callaxios = ()=>{
-    axios.get(`https://127.0.0.1/db.json`)
+    axios.get(`https://127.0.0.1:8080/db.json`)
   }
   return (
     <div>
