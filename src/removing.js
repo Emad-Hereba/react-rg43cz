@@ -33,7 +33,28 @@ const Removit = () => {
     //  alert(names);
   };
   const callaxios = () => {
-    axios.get(`http://127.0.0.1:8080/db.json`);
+    //axios('https://json-server-sncgpb--3000.local.webcontainer.io/comments');
+
+    axios('https://json-server-sncgpb--3000.local.webcontainer.io/comments', {
+      method: 'GET',
+      mode: 'no-cors',
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      },
+      withCredentials: true,
+      credentials: 'same-origin',
+    }).then(response => {
+    })      
+
+/*    const url = 'https://json-server-sncgpb--3000.local.webcontainer.io/comments';
+
+fetch(url, {mode : 'no-cors'})
+  .then(r =>
+    { console.log('R', r.body)
+      r.json()})
+  .then(json => (document.getElementById('output').innerHTML = JSON.stringify(json, null, 2)));
+*/
   };
   return (
     <div>
