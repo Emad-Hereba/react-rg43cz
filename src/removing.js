@@ -34,11 +34,11 @@ const Removit = () => {
   };
   const callaxios = () => {
  
-    axios('https://json-server-lyvuhe--3000.local.webcontainer.io/posts', {
+    axios('https://json-server-lyvuhe--3000.local.webcontainer.io', {
       method: 'GET',
       mode: 'no-cors',
       headers: {
-        'Access-Control-Allow-Origin':  'https://react-umsnhy.stackblitz.io',
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
