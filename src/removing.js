@@ -38,7 +38,7 @@ const Removit = () => {
       method: 'GET',
       mode: 'no-cors',
       headers: {
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin':  'https://react-umsnhy.stackblitz.io',
         'Content-Type': 'application/json',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
