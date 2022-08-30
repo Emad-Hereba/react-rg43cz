@@ -34,7 +34,7 @@ const Removit = () => {
   };
   const callaxios = () => {
  
-    axios('https://json-server-lyvuhe--3000.local.webcontainer.io', {
+    axios('https://json-server-lyvuhe--3000.local.webcontainer.io:8080/posts', {
       method: 'GET',
       mode: 'no-cors',
       headers: {
