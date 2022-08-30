@@ -34,14 +34,14 @@ const Removit = () => {
   };
   const callaxios = () => {
  
-    axios('https://json-server-lyvuhe--3000.local.webcontainer.io:8080/posts', {
+    axios('https://192.168.1.104:8080/posts', {
       method: 'GET',
       mode: 'no-cors',
       headers: {
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': 'https://react-umsnhy.stackblitz.io',
         'Content-Type': 'application/json',
         'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
+        'Access-Control-Allow-Methods': 'GET',
         'Authorization': 'Bearer key',
       },
       withCredentials: true,
